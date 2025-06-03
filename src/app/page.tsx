@@ -83,8 +83,8 @@ export default function HomePage() {
       <header className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled ? 'bg-white/95 shadow-sm py-2' : 'bg-transparent py-4'}`}>
         <div className="container flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link className="flex items-center space-x-2 z-50" href="/">
-            <GraduationCap className="h-7 w-7 text-primary" />
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Lincoln High</span>
+            <GraduationCap className="h-7 w-7 text-red-600" />
+            <span className="text-xl font-bold bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">Lincoln High</span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -98,26 +98,26 @@ export default function HomePage() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors relative group"
+                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 transition-colors relative group"
               >
                 {item.name}
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4 group-hover:left-1/4"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-3/4 group-hover:left-1/4"></span>
               </Link>
             ))}
           </nav>
           
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="ghost" size="sm" className="text-gray-700 hover:text-primary">
+            <Button variant="ghost" size="sm" className="text-gray-700 hover:text-red-600">
               Student Portal
             </Button>
-            <Button size="sm" className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90">
+            <Button size="sm" className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900">
               Apply Now
             </Button>
           </div>
           
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-md text-gray-700 hover:text-primary focus:outline-none z-50"
+            className="md:hidden p-2 rounded-md text-gray-700 hover:text-red-600 focus:outline-none z-50"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -144,7 +144,7 @@ export default function HomePage() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="flex items-center justify-between py-2 text-gray-700 hover:text-primary transition-colors"
+                    className="flex items-center justify-between py-2 text-gray-700 hover:text-red-600 transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
@@ -155,7 +155,7 @@ export default function HomePage() {
                   <Button variant="outline" className="w-full">
                     Student Portal
                   </Button>
-                  <Button className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90">
+                  <Button className="w-full bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900">
                     Apply Now
                   </Button>
                 </div>
@@ -167,9 +167,9 @@ export default function HomePage() {
 
       <main className="flex-1 pt-16">
         {/* Hero Section - Enhanced with gradient and parallax effect */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-blue-50 py-20 sm:py-24 lg:py-32">
+        <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 py-20 sm:py-24 lg:py-32">
           <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-red-600/5 via-transparent to-transparent"></div>
             <div className="absolute inset-0 bg-[url('/grid.svg')] bg-[size:100px_100px] opacity-10"></div>
           </div>
           
@@ -184,7 +184,7 @@ export default function HomePage() {
                       transition={{ duration: 0.8 }}
                       className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                     >
-                      Excellence in <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Education</span> Since 1952
+                      Excellence in <span className="bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">Education</span> Since 1952
                     </motion.h1>
                     <p className="max-w-[600px] text-lg text-gray-600">
                       Empowering students to achieve their full potential through innovative learning, dedicated faculty,
@@ -197,14 +197,14 @@ export default function HomePage() {
                   <div className="flex flex-col gap-3 min-[400px]:flex-row">
                     <Button 
                       size="lg" 
-                      className="h-12 px-8 bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-primary/30 transition-all"
+                      className="h-12 px-8 bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 shadow-lg hover:shadow-red-600/30 transition-all"
                     >
                       Schedule a Tour
                     </Button>
                     <Button 
                       variant="outline" 
                       size="lg" 
-                      className="h-12 px-8 border-gray-300 hover:border-primary hover:text-primary"
+                      className="h-12 px-8 border-gray-300 hover:border-red-600 hover:text-red-600"
                     >
                       Learn More
                     </Button>
@@ -221,9 +221,9 @@ export default function HomePage() {
                       <motion.div
                         key={index}
                         whileHover={{ y: -5 }}
-                        className="rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm transition-all hover:shadow-md hover:border-primary/20"
+                        className="rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm transition-all hover:shadow-md hover:border-red-600/20"
                       >
-                        <div className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+                        <div className="text-2xl font-bold bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">
                           {stat.number}
                         </div>
                         <div className="text-sm text-gray-500">{stat.label}</div>
@@ -239,7 +239,7 @@ export default function HomePage() {
                   whileHover={{ scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
-                  <div className="absolute -right-6 -top-6 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
+                  <div className="absolute -right-6 -top-6 h-64 w-64 rounded-full bg-red-600/10 blur-3xl" />
                   <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                     <Image
                       src="/school-building.jpg"
@@ -251,7 +251,7 @@ export default function HomePage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900/30 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <h3 className="text-xl font-semibold">Our Beautiful Campus</h3>
+                      <h3 className="text-xl font-semibold">Our Beautiful School</h3>
                       <p className="text-sm opacity-90">State-of-the-art facilities for modern education</p>
                     </div>
                   </div>
@@ -267,7 +267,7 @@ export default function HomePage() {
             <FadeIn>
               <div className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  About <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Lincoln High</span>
+                  About <span className="bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">Lincoln High</span>
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">
                   A tradition of academic excellence and character development
@@ -297,8 +297,8 @@ export default function HomePage() {
                           whileHover={{ y: -3 }}
                           className="flex items-start space-x-3 rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md"
                         >
-                          <div className="flex-shrink-0 rounded-lg bg-primary/10 p-2">
-                            <item.icon className="h-5 w-5 text-primary" />
+                          <div className="flex-shrink-0 rounded-lg bg-red-600/10 p-2">
+                            <item.icon className="h-5 w-5 text-red-600" />
                           </div>
                           <span className="text-gray-700">{item.text}</span>
                         </motion.div>
@@ -309,7 +309,7 @@ export default function HomePage() {
                 
                 <FadeIn delay={0.2}>
                   <div className="relative">
-                    <div className="absolute -left-6 -top-6 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
+                    <div className="absolute -left-6 -top-6 h-64 w-64 rounded-full bg-red-600/10 blur-3xl" />
                     <div className="relative overflow-hidden rounded-3xl shadow-xl">
                       <Image
                         src="/classroom.jpg"
@@ -337,7 +337,7 @@ export default function HomePage() {
             <FadeIn>
               <div className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Our <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Academic Programs</span>
+                  Our <span className="bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">Academic Programs</span>
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">
                   Comprehensive curriculum designed to challenge and inspire
@@ -351,19 +351,19 @@ export default function HomePage() {
                   title: "STEM Excellence",
                   description: "Advanced science, technology, engineering, and mathematics programs",
                   items: ["AP Physics & Chemistry", "Computer Science & Robotics", "Engineering Design", "Advanced Mathematics"],
-                  color: "bg-blue-100 text-blue-800"
+                  color: "bg-red-100 text-red-800"
                 },
                 {
                   title: "Liberal Arts",
                   description: "Comprehensive humanities and social sciences education",
                   items: ["AP Literature & Language", "World History & Government", "Foreign Languages", "Philosophy & Ethics"],
-                  color: "bg-emerald-100 text-emerald-800"
+                  color: "bg-gray-100 text-gray-800"
                 },
                 {
                   title: "Arts & Athletics",
                   description: "Creative expression and physical development programs",
                   items: ["Visual & Performing Arts", "Varsity Sports Teams", "Music & Theater", "Health & Wellness"],
-                  color: "bg-amber-100 text-amber-800"
+                  color: "bg-black/10 text-gray-900"
                 }
               ].map((program, index) => (
                 <FadeIn key={index} delay={index * 0.1}>
@@ -372,9 +372,9 @@ export default function HomePage() {
                     transition={{ type: "spring", stiffness: 300 }}
                   >
                     <Card className="h-full transition-all hover:shadow-lg border-0 bg-white overflow-hidden group">
-                      <div className={`h-2 w-full ${program.color}`}></div>
+                      <div className={`h-2 w-full ${program.color.replace('text', 'bg')}`}></div>
                       <CardHeader>
-                        <div className={`mb-4 h-12 w-12 rounded-lg ${program.color} flex items-center justify-center group-hover:rotate-12 transition-transform`}>
+                        <div className={`mb-4 h-12 w-12 rounded-lg ${program.color.replace('text', 'bg')} flex items-center justify-center group-hover:rotate-12 transition-transform`}>
                           <GraduationCap className="h-6 w-6" />
                         </div>
                         <CardTitle className="text-gray-900">{program.title}</CardTitle>
@@ -388,7 +388,7 @@ export default function HomePage() {
                               className="flex items-start"
                               whileHover={{ x: 5 }}
                             >
-                              <span className={`mr-2 mt-1.5 h-2 w-2 rounded-full ${program.color.replace('100', '500')}`} />
+                              <span className={`mr-2 mt-1.5 h-2 w-2 rounded-full ${program.color.replace('100', '600')}`} />
                               <span className="text-gray-700">{item}</span>
                             </motion.li>
                           ))}
@@ -403,7 +403,7 @@ export default function HomePage() {
         </section>
 
         {/* Stats Section with animated counters */}
-        <section className="py-12 sm:py-16 bg-gradient-to-r from-primary to-blue-600 text-white">
+        <section className="py-12 sm:py-16 bg-gradient-to-r from-red-600 to-red-800 text-white">
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8">
               {[
@@ -434,7 +434,7 @@ export default function HomePage() {
             <FadeIn>
               <div className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Latest <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">News & Events</span>
+                  Latest <span className="bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">News & Events</span>
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">
                   Stay updated with what's happening at Lincoln High
@@ -477,7 +477,7 @@ export default function HomePage() {
                         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
                       </div>
                       <CardHeader>
-                        <CardTitle className="text-gray-900 group-hover:text-primary transition-colors">
+                        <CardTitle className="text-gray-900 group-hover:text-red-600 transition-colors">
                           {news.title}
                         </CardTitle>
                         <CardDescription className="text-gray-600">
@@ -503,7 +503,7 @@ export default function HomePage() {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-gray-300 hover:border-primary hover:text-primary"
+                  className="border-gray-300 hover:border-red-600 hover:text-red-600"
                 >
                   View All News
                 </Button>
@@ -518,7 +518,7 @@ export default function HomePage() {
             <FadeIn>
               <div className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  What Our <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Community Says</span>
+                  What Our <span className="bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">Community Says</span>
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">
                   Hear from students, parents, and alumni about their experiences
@@ -538,7 +538,7 @@ export default function HomePage() {
             <FadeIn>
               <div className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Contact <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Lincoln High</span>
+                  Contact <span className="bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">Lincoln High</span>
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">
                   Get in touch with our school administration
@@ -563,8 +563,8 @@ export default function HomePage() {
                           className="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-50 transition-colors"
                           whileHover={{ x: 5 }}
                         >
-                          <div className="mt-1 rounded-full bg-primary/10 p-2 flex-shrink-0">
-                            <item.icon className="h-5 w-5 text-primary" />
+                          <div className="mt-1 rounded-full bg-red-600/10 p-2 flex-shrink-0">
+                            <item.icon className="h-5 w-5 text-red-600" />
                           </div>
                           <span className="text-gray-700">{item.text}</span>
                         </motion.div>
@@ -586,9 +586,9 @@ export default function HomePage() {
                         <Link
                           key={index}
                           href="#"
-                          className="group flex items-center space-x-2 text-gray-700 transition-colors hover:text-primary"
+                          className="group flex items-center space-x-2 text-gray-700 transition-colors hover:text-red-600"
                         >
-                          <span className="h-1.5 w-1.5 rounded-full bg-primary opacity-0 transition-opacity group-hover:opacity-100" />
+                          <span className="h-1.5 w-1.5 rounded-full bg-red-600 opacity-0 transition-opacity group-hover:opacity-100" />
                           <span>{link}</span>
                         </Link>
                       ))}
@@ -613,7 +613,7 @@ export default function HomePage() {
                         </label>
                         <input
                           id="first-name"
-                          className="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                          className="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2"
                           placeholder="John"
                         />
                       </div>
@@ -623,7 +623,7 @@ export default function HomePage() {
                         </label>
                         <input
                           id="last-name"
-                          className="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                          className="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2"
                           placeholder="Doe"
                         />
                       </div>
@@ -635,7 +635,7 @@ export default function HomePage() {
                       <input
                         id="email"
                         type="email"
-                        className="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                        className="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -646,12 +646,12 @@ export default function HomePage() {
                       <textarea
                         id="message"
                         rows={4}
-                        className="flex min-h-[80px] w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                        className="flex min-h-[80px] w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2"
                         placeholder="Your message here..."
                       />
                     </div>
                     <Button 
-                      className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-primary/30 transition-all"
+                      className="w-full bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 shadow-lg hover:shadow-red-600/30 transition-all"
                       size="lg"
                     >
                       Send Message
@@ -671,7 +671,7 @@ export default function HomePage() {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Visit Our Campus</h3>
               <p className="text-gray-600 mb-4">Schedule a tour to experience Lincoln High firsthand</p>
               <Button 
-                className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-primary/30 transition-all"
+                className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 shadow-lg hover:shadow-red-600/30 transition-all"
               >
                 Book a Tour
               </Button>
@@ -687,8 +687,8 @@ export default function HomePage() {
             <FadeIn>
               <div className="space-y-4">
                 <div className="flex items-center space-x-2">
-                  <GraduationCap className="h-7 w-7 text-primary" />
-                  <span className="text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Lincoln High</span>
+                  <GraduationCap className="h-7 w-7 text-red-600" />
+                  <span className="text-xl font-bold bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">Lincoln High</span>
                 </div>
                 <p className="text-sm text-gray-600">
                   Excellence in education since 1952. Preparing students for success in college, career, and life.
@@ -698,7 +698,7 @@ export default function HomePage() {
                     <Link 
                       key={index} 
                       href="#" 
-                      className="text-gray-400 hover:text-primary transition-colors"
+                      className="text-gray-400 hover:text-red-600 transition-colors"
                       aria-label={social}
                     >
                       <span className="sr-only">{social}</span>
@@ -731,9 +731,9 @@ export default function HomePage() {
                       <li key={i}>
                         <Link
                           href="#"
-                          className="text-sm text-gray-600 transition-colors hover:text-primary flex items-start group"
+                          className="text-sm text-gray-600 transition-colors hover:text-red-600 flex items-start group"
                         >
-                          <span className="h-1.5 w-1.5 rounded-full bg-primary opacity-0 mt-2 mr-2 transition-opacity group-hover:opacity-100"></span>
+                          <span className="h-1.5 w-1.5 rounded-full bg-red-600 opacity-0 mt-2 mr-2 transition-opacity group-hover:opacity-100"></span>
                           {link}
                         </Link>
                       </li>
@@ -750,13 +750,13 @@ export default function HomePage() {
                 &copy; {new Date().getFullYear()} Lincoln High School. All rights reserved.
               </p>
               <div className="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-2">
-                <Link href="#" className="text-sm text-gray-600 hover:text-primary transition-colors">
+                <Link href="#" className="text-sm text-gray-600 hover:text-red-600 transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="#" className="text-sm text-gray-600 hover:text-primary transition-colors">
+                <Link href="#" className="text-sm text-gray-600 hover:text-red-600 transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="#" className="text-sm text-gray-600 hover:text-primary transition-colors">
+                <Link href="#" className="text-sm text-gray-600 hover:text-red-600 transition-colors">
                   Accessibility
                 </Link>
               </div>
@@ -842,7 +842,7 @@ const TestimonialCarousel = () => {
             "{testimonials[current].quote}"
           </blockquote>
           <div className="mt-6 flex items-center justify-center">
-            <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden">
+            <div className="h-12 w-12 rounded-full bg-red-600/10 flex items-center justify-center overflow-hidden">
               <Image
                 src={testimonials[current].avatar}
                 alt={testimonials[current].author}
@@ -864,7 +864,7 @@ const TestimonialCarousel = () => {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`h-2 w-2 rounded-full transition-all ${current === index ? 'bg-primary w-6' : 'bg-gray-300'}`}
+            className={`h-2 w-2 rounded-full transition-all ${current === index ? 'bg-red-600 w-6' : 'bg-gray-300'}`}
             aria-label={`Go to testimonial ${index + 1}`}
           />
         ))}
