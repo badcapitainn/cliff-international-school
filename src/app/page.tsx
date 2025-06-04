@@ -110,9 +110,9 @@ export default function HomePage() {
             <Button variant="ghost" size="sm" className="text-gray-700 hover:text-red-600">
               Student Portal
             </Button>
-            <Button size="sm" className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900">
+            {/* <Button size="sm" className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900">
               Apply Now
-            </Button>
+            </Button> */}
           </div>
           
           {/* Mobile menu button */}
@@ -155,9 +155,9 @@ export default function HomePage() {
                   <Button variant="outline" className="w-full">
                     Student Portal
                   </Button>
-                  <Button className="w-full bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900">
+                  {/* <Button className="w-full bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900">
                     Apply Now
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </motion.div>
@@ -354,13 +354,13 @@ export default function HomePage() {
                   color: "bg-red-100 text-red-800"
                 },
                 {
-                  title: "Liberal Arts",
+                  title: "Commercials",
                   description: "Comprehensive humanities and social sciences education",
                   items: ["AP Literature & Language", "World History & Government", "Foreign Languages", "Philosophy & Ethics"],
                   color: "bg-gray-100 text-gray-800"
                 },
                 {
-                  title: "Arts & Athletics",
+                  title: "Arts & Humanities",
                   description: "Creative expression and physical development programs",
                   items: ["Visual & Performing Arts", "Varsity Sports Teams", "Music & Theater", "Health & Wellness"],
                   color: "bg-black/10 text-gray-900"
@@ -498,7 +498,7 @@ export default function HomePage() {
               ))}
             </div>
             
-            <FadeIn delay={0.3}>
+            {/* <FadeIn delay={0.3}>
               <div className="mt-10 text-center sm:mt-12">
                 <Button 
                   variant="outline" 
@@ -508,7 +508,7 @@ export default function HomePage() {
                   View All News
                 </Button>
               </div>
-            </FadeIn>
+            </FadeIn> */}
           </div>
         </section>
 
@@ -578,10 +578,7 @@ export default function HomePage() {
                       {[
                         "Student Handbook",
                         "Academic Calendar",
-                        "Parent Portal",
                         "Athletics Schedule",
-                        "Lunch Menu",
-                        "Transportation"
                       ].map((link, index) => (
                         <Link
                           key={index}
@@ -664,7 +661,7 @@ export default function HomePage() {
         </section>
 
         {/* Interactive Map Section */}
-        <section className="h-80 w-full bg-gray-100 sm:h-96 relative overflow-hidden">
+        {/* <section className="h-80 w-full bg-gray-100 sm:h-96 relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('/map-pattern.svg')] opacity-10"></div>
           <div className="container h-full relative z-10 flex items-center justify-center">
             <div className="text-center p-6 bg-white rounded-xl shadow-lg max-w-md mx-auto">
@@ -677,7 +674,7 @@ export default function HomePage() {
               </Button>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* Enhanced Footer */}
