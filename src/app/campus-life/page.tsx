@@ -1,5 +1,24 @@
 import Image from "next/image";
 import SiteShell from "@/components/SiteShell";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Campus Life",
+  description: "Experience holistic development at Cliffs International College. From science labs and ICT suites to debates, sports, and national competitions in a calm, semi-rural campus.",
+  keywords: ["campus life", "school activities", "sports clubs", "student life Zimbabwe", "extracurricular activities"],
+  openGraph: {
+    title: "Campus Life | Cliffs International College",
+    description: "In and beyond the classroom - holistic development with clubs, sports, and competitions.",
+    images: [
+      {
+        url: "/school_pictures/students_red_1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Students engaged in campus activities at Cliffs International College",
+      },
+    ],
+  },
+};
 
 export default function CampusLifePage() {
   return (

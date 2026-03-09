@@ -1,5 +1,24 @@
 import Image from "next/image";
 import SiteShell from "@/components/SiteShell";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Get in touch with Cliffs International College. Visit us at 20440 Victory Park, Solomio, Ruwa, Zimbabwe. Phone: 0783 841 141. Email: cliftonmataruse2@gmail.com",
+  keywords: ["contact school", "school address Zimbabwe", "Ruwa school location", "school phone number"],
+  openGraph: {
+    title: "Contact | Cliffs International College",
+    description: "Visit Cliffs International College in Solomio, Ruwa. Contact us for admissions and inquiries.",
+    images: [
+      {
+        url: "/school_pictures/school_layout_1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Cliffs International College campus location",
+      },
+    ],
+  },
+};
 
 export default function ContactPage() {
   return (

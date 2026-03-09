@@ -1,5 +1,24 @@
 import Image from "next/image";
 import SiteShell from "@/components/SiteShell";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Admissions",
+  description: "Join Cliffs International College family. Learn about entry requirements, intakes, and competitive private school fees with flexible payment plans for quality education.",
+  keywords: ["school admissions Zimbabwe", "private school fees", "enrollment requirements", "school intake"],
+  openGraph: {
+    title: "Admissions | Cliffs International College",
+    description: "Accessible, future-proof education. Competitive fees and flexible payment plans.",
+    images: [
+      {
+        url: "/school_pictures/students_10.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Students at Cliffs International College",
+      },
+    ],
+  },
+};
 
 export default function AdmissionsPage() {
   return (

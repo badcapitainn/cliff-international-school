@@ -2,6 +2,24 @@ import SiteShell from "@/components/SiteShell";
 import HeroSlideshow from "@/components/HeroSlideshow";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Welcome to Cliffs International College - Zimbabwe's premier private school offering ZIMSEC-aligned O & A-Level education with a focus on international competitiveness and holistic development.",
+  openGraph: {
+    title: "Cliffs International College | Elite Private School in Zimbabwe",
+    description: "Equipping youngsters to compete internationally – an elite Zimbabwean private school blending heritage, technology and holistic education.",
+    images: [
+      {
+        url: "/school_pictures/school_layout_1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Cliffs International College campus",
+      },
+    ],
+  },
+};
 
 export default function HomePage() {
   return (

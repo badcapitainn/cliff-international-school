@@ -1,9 +1,63 @@
 import Image from "next/image";
 import SiteShell from "@/components/SiteShell";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Academics",
+  description: "Discover our ZIMSEC-aligned O & A-Level curriculum at Cliffs International College. From Form 1 to 6, we build academic excellence, digital literacy, and character for international competitiveness.",
+  keywords: ["ZIMSEC curriculum", "O Level A Level Zimbabwe", "academic programs", "secondary education Zimbabwe"],
+  openGraph: {
+    title: "Academics | Cliffs International College",
+    description: "ZIMSEC curriculum, globally minded outcomes. Rigorous academic foundation from Form 1 to 6.",
+    images: [
+      {
+        url: "/school_pictures/classroom_layout_2.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Learners in a focused classroom at Cliffs International College",
+      },
+    ],
+  },
+};
 
 export default function AcademicsPage() {
   return (
     <SiteShell>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Course",
+                "name": "O Level Program",
+                "description": "Ordinary Level education from Form 1-4 aligned to ZIMSEC standards",
+                "provider": {
+                  "@type": "EducationalOrganization",
+                  "name": "Cliffs International College"
+                },
+                "educationalLevel": "Secondary School",
+                "courseMode": "full-time",
+                "timeRequired": "P4Y"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Course",
+                "name": "A Level Program",
+                "description": "Advanced Level education from Form 5-6 aligned to ZIMSEC standards",
+                "provider": {
+                  "@type": "EducationalOrganization",
+                  "name": "Cliffs International College"
+                },
+                "educationalLevel": "Secondary School",
+                "courseMode": "full-time",
+                "timeRequired": "P2Y"
+              }
+            ])
+          }}
+        />
+      </head>
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <header className="grid gap-8 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] md:items-start">
           <div>
