@@ -30,7 +30,7 @@ export default function CampusLifePage() {
           />
           <CampusTile
             src="/school_pictures/students_at debate.jpg"
-            title="Debate & leadership"
+            title="Fostering leadership"
           />
           <CampusTile src="/school_pictures/students_red_1.jpg" title="House spirit" />
           <CampusTile src="/school_pictures/students_7.jpg" title="Digital champions" />

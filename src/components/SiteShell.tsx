@@ -13,10 +13,10 @@ type SiteShellProps = {
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/academics", label: "Academics" },
+  { href: "/admissions", label: "Admissions" },
   { href: "/campus-life", label: "Campus Life" },
   { href: "/achievements", label: "Achievements" },
   { href: "/facilities", label: "Facilities" },
-  { href: "/admissions", label: "Admissions" },
   { href: "/contact", label: "Contact" },
 ];
 
