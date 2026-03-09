@@ -12,20 +12,6 @@ const body = Inter({
   subsets: ["latin"],
 });
 
-import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
-import "./globals.css";
-
-const display = Playfair_Display({
-  variable: "--font-display",
-  subsets: ["latin"],
-});
-
-const body = Inter({
-  variable: "--font-body",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: {
     default: "Cliffs International College | Elite Private School in Zimbabwe",
