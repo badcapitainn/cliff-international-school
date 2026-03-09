@@ -3,7 +3,6 @@
 import Image from "next/image";
 import SiteShell from "@/components/SiteShell";
 import { useEffect, useState } from "react";
-import type { Metadata } from "next";
 
 // Note: Metadata export is not supported in client components
 // This would need to be moved to a server component wrapper
