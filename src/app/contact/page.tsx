@@ -30,7 +30,7 @@ export default function ContactPage() {
               Contact
             </p>
             <h1 className="mt-2 text-2xl font-semibold text-slate-900 sm:text-3xl">
-              Visit Cliffs International College
+              Visit Cliffs International College Secondary
             </h1>
             <p className="mt-3 text-sm text-slate-700 sm:text-[15px]">
               We welcome visits, calls and enquiries. Our administration team is always happy to
@@ -48,7 +48,7 @@ export default function ContactPage() {
                 cliftonmataruse2@gmail.com
               </ContactRow>
               <ContactRow label="Location">
-                Solomio, Ruwa — a peaceful semi‑rural community offering a calm, focused learning
+                Solomio, Ruwa — a peaceful community offering a calm, focused learning
                 environment.
               </ContactRow>
             </div>

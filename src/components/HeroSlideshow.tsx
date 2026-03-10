@@ -8,7 +8,7 @@ const slides = [
     src: "/school_pictures/school_layout_1.jpg",
     label: "Solomio campus",
     caption:
-      "A peaceful, semi‑rural setting in Solomio, Ruwa — away from city noise, yet well‑connected.",
+      "A peaceful setting in Solomio, Ruwa — away from city noise, yet well‑connected.",
   },
   {
     src: "/school_pictures/classroom_layout_1.jpg",
@@ -17,7 +17,7 @@ const slides = [
       "Small classes and attentive teachers create space for every learner to be seen and supported.",
   },
   {
-    src: "/school_pictures/students_7.jpg",
+    src: "/school_pictures/students_at debate.jpg",
     label: "Digital excellence",
     caption:
       "Award‑winning ICT teams leading the way in national Digital Minds competitions.",

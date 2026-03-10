@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function AcademicsPage() {
   return (
     <SiteShell>
-      <head>
+      
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -57,7 +57,7 @@ export default function AcademicsPage() {
             ])
           }}
         />
-      </head>
+      
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <header className="grid gap-8 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] md:items-start">
           <div>
