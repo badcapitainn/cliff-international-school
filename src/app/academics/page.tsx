@@ -121,7 +121,7 @@ export default function AcademicsPage() {
             },
             {
               title: "Faculty of Commerce",
-              body: "Accounting, Business Studies, Economics and Commerce for tomorrow’s entrepreneurs and business leaders.",
+              body: "Accounting, Business Studies, Statistics, Economics and Commerce for tomorrow’s entrepreneurs and business leaders.",
             },
             {
               title: "Faculty of Languages",
