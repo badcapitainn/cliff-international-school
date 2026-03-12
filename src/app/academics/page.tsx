@@ -117,7 +117,7 @@ export default function AcademicsPage() {
           {[
             {
               title: "Faculty of Sciences",
-              body: "Biology, Chemistry, Physics, Mathematics and Combined Science — preparing future doctors, engineers and scientists.",
+              body: "Biology, Chemistry, Physics, Computer Science, Mathematics, Geography and Combined Science — preparing future doctors, engineers and scientists.",
             },
             {
               title: "Faculty of Commerce",
@@ -129,7 +129,7 @@ export default function AcademicsPage() {
             },
             {
               title: "Faculty of Humanities",
-              body: "History, Geography, Sociology and more, shaping analytical, socially aware citizens.",
+              body: "History, Sociology and more, shaping analytical, socially aware citizens.",
             },
           ].map((item) => (
             <article
