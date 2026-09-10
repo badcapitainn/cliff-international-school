@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink, ChevronLeft, ChevronRight, Award, GraduationCap, ArrowRight } from "lucide-react";
+import { ExternalLink, ChevronLeft, ChevronRight, Award, ArrowRight } from "lucide-react";
 import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
