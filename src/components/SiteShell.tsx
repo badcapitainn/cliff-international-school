@@ -13,7 +13,6 @@ import {
   GraduationCap,
   ChevronRight,
   Clock,
-  ShieldCheck,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -142,7 +141,7 @@ export default function SiteShell({ children }: SiteShellProps) {
           </nav>
 
           {/* Header Action & Mobile Toggle */}
-          {/* <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3">
             <Link
               href="/admissions"
               className="hidden rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold text-white shadow-sm transition-all hover:bg-red-800 sm:inline-flex"
@@ -157,7 +156,7 @@ export default function SiteShell({ children }: SiteShellProps) {
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
-          </div> */}
+          </div>
         </div>
 
         {/* Mobile Navigation Drawer */}
