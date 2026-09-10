@@ -58,7 +58,7 @@ export default function AdmissionsPage() {
               Cliffs International College operates an open admissions policy, welcoming new learners throughout the academic year. While our main intake begins each January, mid-term and beginning-of-term enrolments are welcomed subject to classroom availability.
             </p>
             <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-              Because class sizes are kept to an optimal 1:25 ratio to safeguard individualized attention, early application is strongly encouraged — especially for Form 1 and Lower 6 (Form 5) entry points.
+              Because class sizes are kept to an optimal size to safeguard individualized attention, early application is strongly encouraged — especially for Form 1 and Lower 6 (Form 5) entry points.
             </p>
           </FadeIn>
 
