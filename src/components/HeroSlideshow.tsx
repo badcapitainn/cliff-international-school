@@ -1,115 +1,224 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import Link from "next/link";
+import { ExternalLink, ChevronLeft, ChevronRight, Award, GraduationCap, ArrowRight } from "lucide-react";
+import { useEffect, useState, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
   {
     src: "/school_pictures/school_layout_1.jpg",
-    label: "Solomio campus",
+    tag: "Solomio Campus · Ruwa",
+    title: "A Peaceful, Distraction-Free Learning Sanctuary",
     caption:
-      "A peaceful setting in Solomio, Ruwa — away from city noise, yet well‑connected.",
-  },
-  {
-    src: "/school_pictures/classroom_layout_1.jpg",
-    label: "Focused classrooms",
-    caption:
-      "Small classes and attentive teachers create space for every learner to be seen and supported.",
+      "Situated in the tranquil community of Solomio, our campus fosters rigorous academic focus, discipline, and personal development away from urban noise.",
   },
   {
     src: "/school_pictures/students_at debate.jpg",
-    label: "Digital excellence",
+    tag: "Technology & Competitions",
+    title: "Champions in Innovation & Digital Minds",
     caption:
-      "Award‑winning ICT teams leading the way in national Digital Minds competitions.",
+      "1st Place Winners at the Irene Christian College Digital Minds Quiz. Preparing youngsters with digital literacy to compete on national and international stages.",
+  },
+  {
+    src: "/school_pictures/classroom_layout_2.jpg",
+    tag: "Academic Excellence · 1:25 Ratio",
+    title: "Dedicated Faculty & Individualized Attention",
+    caption:
+      "ZIMSEC-aligned O & A-Level education from Form 1 to 6, achieving an outstanding 100% A-Level pass rate two years in a row (2024 & 2025).",
+  },
+  {
+    src: "/school_pictures/students_recieving _prize_1.jpg",
+    tag: "Holistic Student Development",
+    title: "Building Character, Integrity & Leadership",
+    caption:
+      "Empowering students through debate, sports, science clubs, and community outreach like our partnership with Rusike Children's Home.",
   },
 ];
 
 export default function HeroSlideshow() {
   const [active, setActive] = useState(0);
 
-  useEffect(() => {
-    const id = setInterval(() => {
-      setActive((current) => (current + 1) % slides.length);
-    }, 3000);
-    return () => clearInterval(id);
+  const nextSlide = useCallback(() => {
+    setActive((prev) => (prev + 1) % slides.length);
   }, []);
 
+  const prevSlide = useCallback(() => {
+    setActive((prev) => (prev - 1 + slides.length) % slides.length);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(nextSlide, 5500);
+    return () => clearInterval(timer);
+  }, [nextSlide]);
+
   return (
-    <section className="relative border-b border-slate-200 bg-black text-white">
-      {/* Blurred full-width background based on active slide */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="relative h-full w-full">
-          <Image
-            src={slides[active].src}
-            alt={slides[active].label}
-            fill
-            className="object-cover blur-3xl opacity-40"
-          />
-        </div>
+    <section className="relative overflow-hidden bg-slate-950 text-white">
+      {/* Background Slideshow Canvas with Ken Burns smooth zoom */}
+      <div className="absolute inset-0 z-0">
+        {slides.map((slide, idx) => (
+          <div
+            key={slide.src}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              idx === active ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+          >
+            <motion.div
+              animate={{ scale: idx === active ? 1.06 : 1 }}
+              transition={{ duration: 6, ease: "easeOut" }}
+              className="relative h-full w-full"
+            >
+              <Image
+                src={slide.src}
+                alt={slide.title}
+                fill
+                priority={idx === 0}
+                className="object-cover object-center"
+              />
+            </motion.div>
+          </div>
+        ))}
+        {/* Layered Gradient Vignette for Superior Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-950/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-black/40" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[360px] max-w-6xl flex-col justify-center gap-8 px-4 py-12 sm:min-h-[420px] sm:px-6 sm:py-16 lg:min-h-[480px] lg:flex-row lg:items-center lg:px-8 lg:py-20">
-        <div className="relative w-full overflow-hidden rounded-3xl border border-slate-700 bg-slate-900/90 shadow-[0_24px_80px_rgba(0,0,0,0.9)] transition-transform duration-300 hover:scale-[1.01] lg:w-2/3">
-          <div className="relative h-[260px] w-full sm:h-[320px] lg:h-[360px]">
-            {slides.map((slide, index) => (
-              <div
-                key={slide.src}
-                className={`absolute inset-0 transition-all duration-700 ease-in-out ${
-                  index === active
-                    ? "opacity-100 translate-x-0 scale-100"
-                    : "pointer-events-none opacity-0 translate-x-4 scale-105"
-                }`}
+      {/* Hero Content Container */}
+      <div className="relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+        <div className="max-w-3xl space-y-6">
+          {/* Institutional Eyebrow Tag with AnimatePresence */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={`tag-${active}`}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.35 }}
+              className="inline-flex items-center gap-2 rounded-full border border-red-500/40 bg-red-950/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-red-200 backdrop-blur-md"
+            >
+              <Award className="h-3.5 w-3.5 text-amber-400" />
+              <span>{slides[active].tag}</span>
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Majestic Serif Headline */}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="font-serif text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl leading-[1.12]"
+          >
+            Equipping Youngsters to{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-300 to-amber-200">
+              Compete Internationally
+            </span>
+          </motion.h1>
+
+          {/* Dynamic Caption with Smooth Fade */}
+          <div className="min-h-[4.5rem]">
+            <AnimatePresence mode="wait">
+              <motion.p
+                key={`caption-${active}`}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.4 }}
+                className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal"
               >
-                <Image
-                  src={slide.src}
-                  alt={slide.label}
-                  fill
-                  priority={index === 0}
-                  className="object-cover"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/5" />
-              </div>
-            ))}
+                {slides[active].caption}
+              </motion.p>
+            </AnimatePresence>
           </div>
 
-          <div className="absolute inset-x-0 bottom-0 flex items-center justify-between px-4 pb-3 pt-2 text-xs sm:px-5">
-            <div className="max-w-xs text-[11px] text-slate-100">
-              <div className="font-semibold text-white">{slides[active].label}</div>
-              <div className="mt-1 text-[11px] text-slate-200">
-                {slides[active].caption}
-              </div>
+          {/* High-Impact Action CTAs with Micro-interactions */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-wrap items-center gap-4 pt-2"
+          >
+            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+              <Link
+                href="/admissions"
+                className="inline-flex items-center gap-2 rounded-full bg-red-700 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-red-950/50 transition-all hover:bg-red-600"
+              >
+                <span>Apply for Admission</span>
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+              <a
+                href="https://cic-portal.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-600 bg-slate-900/80 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition-all hover:border-slate-400 hover:bg-slate-800"
+              >
+                {/* <GraduationCap className="h-4 w-4 text-amber-400" /> */}
+                <span>School Portal</span>
+                <ExternalLink className="h-3.5 w-3.5 opacity-80" />
+              </a>
+            </motion.div>
+
+            <Link
+              href="/academics"
+              className="inline-flex items-center gap-1.5 px-4 py-3.5 text-sm font-medium text-slate-300 transition-colors hover:text-white"
+            >
+              <span>Explore Curriculum &rarr;</span>
+            </Link>
+          </motion.div>
+
+          {/* Interactive Slide Controllers & Indicators */}
+          <div className="flex items-center gap-4 pt-6 border-t border-slate-800/80">
+            <div className="flex items-center gap-2">
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                type="button"
+                onClick={prevSlide}
+                className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-slate-900/80 text-slate-300 hover:bg-slate-800 hover:text-white transition-colors"
+                aria-label="Previous slide"
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </motion.button>
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                type="button"
+                onClick={nextSlide}
+                className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-slate-900/80 text-slate-300 hover:bg-slate-800 hover:text-white transition-colors"
+                aria-label="Next slide"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </motion.button>
             </div>
-            <div className="flex items-center gap-1">
-              {slides.map((_, index) => (
+
+            <div className="flex items-center gap-2">
+              {slides.map((_, i) => (
                 <button
-                  key={index}
+                  key={i}
                   type="button"
-                  onClick={() => setActive(index)}
-                  className={`h-1.5 rounded-full transition-all ${
-                    index === active ? "w-5 bg-red-500" : "w-2 bg-slate-500"
+                  onClick={() => setActive(i)}
+                  className={`relative h-2 rounded-full transition-all duration-300 overflow-hidden ${
+                    i === active ? "w-9 bg-slate-800" : "w-2.5 bg-slate-700 hover:bg-slate-500"
                   }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
+                  aria-label={`Go to slide ${i + 1}`}
+                >
+                  {i === active && (
+                    <motion.div
+                      initial={{ width: "0%" }}
+                      animate={{ width: "100%" }}
+                      transition={{ duration: 5.5, ease: "linear" }}
+                      className="absolute inset-0 bg-red-500 rounded-full"
+                    />
+                  )}
+                </button>
               ))}
             </div>
-          </div>
-        </div>
 
-        <div className="w-full space-y-4 lg:w-1/3">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-red-300">
-            Old World Heritage · Future‑Forward Innovation
-          </p>
-          <h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
-            Equipping youngsters to{" "}
-            <span className="text-red-400">
-              compete internationally
+            <span className="text-xs text-slate-400 font-mono">
+              0{active + 1} / 0{slides.length}
             </span>
-          </h1>
-          <p className="max-w-md text-sm text-slate-200 sm:text-[15px]">
-            Founded in 2018 in Solomio, Ruwa, Cliffs International College is a registered,
-            independent secondary school under MoPSE — committed to academic excellence, holistic
-            development and future‑ready graduates.
-          </p>
+          </div>
         </div>
       </div>
     </section>
