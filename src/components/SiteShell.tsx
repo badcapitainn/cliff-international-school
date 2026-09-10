@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  
-  
+  Menu,
+  X,
   ExternalLink,
   Phone,
   Mail,
@@ -13,7 +13,7 @@ import {
   GraduationCap,
   ChevronRight,
   Clock,
-  
+  ShieldCheck,
 } from "lucide-react";
 import { useState } from "react";
 
