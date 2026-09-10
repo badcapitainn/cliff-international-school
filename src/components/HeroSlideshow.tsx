@@ -23,7 +23,7 @@ const slides = [
   },
   {
     src: "/school_pictures/classroom_layout_2.jpg",
-    tag: "Academic Excellence · 1:25 Ratio",
+    tag: "Academic Excellence",
     title: "Dedicated Faculty & Individualized Attention",
     caption:
       "ZIMSEC-aligned O & A-Level education from Form 1 to 6, achieving an outstanding 100% A-Level pass rate two years in a row (2024 & 2025).",
