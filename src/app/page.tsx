@@ -61,12 +61,12 @@ export default function HomePage() {
 
             <StaggerItem className="flex flex-col items-center text-center p-4 rounded-xl bg-slate-50 border border-slate-100">
               <span className="font-serif text-3xl sm:text-4xl font-bold text-red-800">
-                1:25
+                3rd Place
               </span>
               <span className="mt-1 text-xs sm:text-sm font-semibold text-slate-900">
-                Student to Teacher Ratio
+                National Digital Minds Quiz
               </span>
-              <span className="text-[11px] text-slate-500">Individualized Mentorship</span>
+              <span className="text-[11px] text-slate-500"> National AIDS Council 2026</span>
             </StaggerItem>
 
             <StaggerItem className="flex flex-col items-center text-center p-4 rounded-xl bg-slate-50 border border-slate-100">
