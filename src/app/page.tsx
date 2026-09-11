@@ -23,7 +23,7 @@ import {
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "Welcome to Cliffs International College — Zimbabwe's premier private school in Solomio, Ruwa. ZIMSEC-aligned O & A-Level education, 100% A-Level pass rate, and holistic leadership development.",
+    "Welcome to Cliffs International College — Zimbabwe's premier private school in Victory Park, Ruwa. ZIMSEC-aligned O & A-Level education, 100% A-Level pass rate, and holistic leadership development.",
   openGraph: {
     title: "Cliffs International College | Elite Private Secondary School in Zimbabwe",
     description:
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: "/school_pictures/school_layout_1.jpg",
         width: 1200,
         height: 630,
-        alt: "Cliffs International College campus in Solomio, Ruwa",
+        alt: "Cliffs International College campus in Victory Park, Ruwa",
       },
     ],
   },
@@ -108,7 +108,7 @@ export default function HomePage() {
               </h2>
 
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Founded on 8 May 2018 in Solomio, Ruwa, Cliffs International College was built on a bold conviction: that every young person deserves the opportunity to discover their highest potential, cultivate ethical leadership, and pursue academic excellence without compromise.
+                Founded on 8 May 2018 in Victory Park, Ruwa, Cliffs International College was built on a bold conviction: that every young person deserves the opportunity to discover their highest potential, cultivate ethical leadership, and pursue academic excellence without compromise.
               </p>
 
               <div className="rounded-2xl border-l-4 border-red-800 bg-white p-6 shadow-sm">
@@ -121,7 +121,7 @@ export default function HomePage() {
                     <span className="block text-slate-500">Cliffs International College Secondary</span>
                   </div>
                   <span className="text-red-700 font-semibold tracking-wide uppercase text-[11px]">
-                    Solomio Campus
+                    Victory Park Campus
                   </span>
                 </div>
               </div>
@@ -163,7 +163,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <span className="rounded bg-red-700 px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider">
-                    Solomio, Ruwa
+                    Victory Park, Ruwa
                   </span>
                   <p className="mt-1 text-sm font-semibold">
                     A peaceful, dedicated academic campus supporting focus and character.
@@ -316,7 +316,7 @@ export default function HomePage() {
           <FadeIn direction="up" className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
             <div className="max-w-2xl space-y-2">
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-red-700">
-                Solomio Campus · Ruwa
+                Victory Park Campus · Ruwa
               </span>
               <h2 className="font-serif text-2xl sm:text-4xl font-bold tracking-tight text-slate-900">
                 Facilities Built for Focused Learning

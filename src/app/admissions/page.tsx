@@ -37,7 +37,7 @@ export default function AdmissionsPage() {
               Admissions &amp; Enrollment
             </h1>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-              Accessible, future-proof private education in Solomio, Ruwa. Competitive fees, flexible payment plans, and an environment that equips your child to compete internationally.
+              Accessible, future-proof private education in Victory Park, Ruwa. Competitive fees, flexible payment plans, and an environment that equips your child to compete internationally.
             </p>
           </FadeIn>
         </div>
@@ -88,7 +88,7 @@ export default function AdmissionsPage() {
               {
                 step: "01",
                 title: "Enquiry & Campus Tour",
-                desc: "Visit our Solomio campus or speak with our admissions officers to discuss academic goals and school values.",
+                desc: "Visit our Victory Park campus or speak with our admissions officers to discuss academic goals and school values.",
               },
               {
                 step: "02",
@@ -208,7 +208,7 @@ export default function AdmissionsPage() {
         <FadeIn direction="up" className="rounded-3xl border border-slate-200 bg-slate-900 p-8 sm:p-12 text-white">
           <div className="max-w-3xl space-y-4">
             <h3 className="font-serif text-2xl sm:text-3xl font-bold">
-              Visit Us in Solomio, Ruwa
+              Visit Us in Victory Park, Ruwa
             </h3>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
               We welcome prospective families to tour our campus, meet our dedicated teachers, and experience our peaceful learning environment first-hand.
@@ -216,7 +216,7 @@ export default function AdmissionsPage() {
             <div className="grid gap-3 sm:grid-cols-3 pt-2 text-xs text-slate-300">
               <div>
                 <span className="block text-slate-400 font-semibold uppercase">Address</span>
-                <span className="font-medium">20440 Victory Park, Solomio, Ruwa</span>
+                <span className="font-medium">20440 Victory Park, Ruwa</span>
               </div>
               <div>
                 <span className="block text-slate-400 font-semibold uppercase">Office Hours</span>

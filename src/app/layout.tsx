@@ -103,7 +103,7 @@ export default function RootLayout({
               "logo": "https://cliffs-international-college.edu.zw/logo.png",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "20440 Victory Park, Solomio",
+                "streetAddress": "20440 Victory Park",
                 "addressLocality": "Ruwa",
                 "addressCountry": "ZW"
               },

@@ -31,13 +31,13 @@ export default function FacilitiesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn direction="up" className="max-w-3xl space-y-3">
             <span className="text-xs font-semibold uppercase tracking-[0.22em] text-red-400">
-              Solomio Campus Infrastructure
+              Victory Park Campus Infrastructure
             </span>
             <h1 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-white">
               Campus Facilities &amp; Student Welfare
             </h1>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-              Engineered for academic focus, safety, and holistic growth. A serene setting in Solomio, Ruwa, equipped with modern tools for real-world learning.
+              Engineered for academic focus, safety, and holistic growth. A serene setting in Victory Park, Ruwa, equipped with modern tools for real-world learning.
             </p>
           </FadeIn>
         </div>

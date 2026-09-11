@@ -57,7 +57,7 @@ export default function SiteShell({ children }: SiteShellProps) {
             </a>
             <span className="hidden items-center gap-1.5 text-slate-400 lg:inline-flex">
               <MapPin className="h-3.5 w-3.5 text-red-500" />
-              <span>Solomio, Ruwa, Zimbabwe</span>
+              <span>Victory Park, Ruwa, Zimbabwe</span>
             </span>
           </div>
 
@@ -206,7 +206,7 @@ export default function SiteShell({ children }: SiteShellProps) {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-3.5 w-3.5 text-red-700" />
-                <span>20440 Victory Park, Solomio, Ruwa</span>
+                <span>20440 Victory Park, Ruwa</span>
               </div>
             </div>
           </div>
@@ -242,7 +242,7 @@ export default function SiteShell({ children }: SiteShellProps) {
               </div>
 
               <p className="text-sm leading-relaxed text-slate-400">
-                Founded in 2018 in Solomio, Ruwa, Cliffs International College is a registered independent secondary school under MoPSE, equipping youngsters to excel academically and compete internationally.
+                Founded in 2018 in Victory Park, Ruwa, Cliffs International College is a registered independent secondary school under MoPSE, equipping youngsters to excel academically and compete internationally.
               </p>
 
               {/* <div className="inline-flex items-center gap-2 rounded-md bg-slate-900 px-3 py-1.5 text-xs text-slate-300 border border-slate-800">
@@ -349,7 +349,7 @@ export default function SiteShell({ children }: SiteShellProps) {
               <ul className="mt-4 space-y-3 text-sm text-slate-400">
                 <li className="flex items-start gap-2.5">
                   <MapPin className="mt-0.5 h-4 w-4 text-red-500 shrink-0" />
-                  <span>20440 Victory Park, Solomio, Ruwa, Zimbabwe</span>
+                  <span>20440 Victory Park, Ruwa, Zimbabwe</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Phone className="h-4 w-4 text-red-500 shrink-0" />
@@ -379,7 +379,7 @@ export default function SiteShell({ children }: SiteShellProps) {
               &copy; {new Date().getFullYear()} Cliffs International College Secondary School. All rights reserved.
             </p>
             <p className="text-slate-400">
-              <span className="text-slate-200 font-semibold">Cliffs Family of Schools:</span> Hartcliffe Secondary · Chenai Primary · Cliffs Primary Solomio
+              <span className="text-slate-200 font-semibold">Cliffs Family of Schools:</span> Hartcliffe Secondary · Chenai Primary · Cliffs Primary Victory Park
             </p>
           </div>
         </div>

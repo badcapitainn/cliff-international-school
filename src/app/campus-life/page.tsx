@@ -53,7 +53,7 @@ export default function CampusLifePage() {
               Nurturing the Whole Person: Mind, Body &amp; Spirit
             </h2>
             <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-              At Cliffs International College, we believe education is as much about character and social consciousness as it is about examination grades. Set in the quiet, supportive surroundings of Solomio, students enjoy a campus life filled with spirited debate, technology competitions, sports, house competitions, and meaningful community service.
+              At Cliffs International College, we believe education is as much about character and social consciousness as it is about examination grades. Set in the quiet, supportive surroundings of Victory Park, students enjoy a campus life filled with spirited debate, technology competitions, sports, house competitions, and meaningful community service.
             </p>
             <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
               Our small class sizes and intentional pastoral care ensure no student gets lost in the crowd. Teachers act as mentors, guiding learners through academic hurdles and personal milestones alike.
@@ -184,7 +184,7 @@ export default function CampusLifePage() {
               Life on Campus in Pictures
             </h2>
             <p className="text-sm text-slate-600 mt-1">
-              Celebrating milestones, debate matches, and daily camaraderie in Solomio.
+              Celebrating milestones, debate matches, and daily camaraderie in Victory Park.
             </p>
           </FadeIn>
 

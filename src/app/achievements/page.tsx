@@ -157,7 +157,7 @@ export default function AchievementsPage() {
               Coming Soon: On-Site Examinations Centre
             </h3>
             <p className="text-sm text-slate-700 leading-relaxed">
-              Cliffs International College is currently constructing an on-site ZIMSEC examination centre on our Solomio campus. Once completed, students will write national public examinations right on home ground.
+              Cliffs International College is currently constructing an on-site ZIMSEC examination centre on our Victory Park campus. Once completed, students will write national public examinations right on home ground.
             </p>
             <p className="text-sm text-slate-700 leading-relaxed">
               This milestone eliminates travel stress, preserves familiarity, and provides our learners with the optimal environment to perform at their best.

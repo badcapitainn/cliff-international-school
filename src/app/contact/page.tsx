@@ -6,11 +6,11 @@ import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionReveal
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Cliffs International College. Visit us at 20440 Victory Park, Solomio, Ruwa, Zimbabwe. Phone: 0783 841 141. Email: cliftonmataruse2@gmail.com",
+  description: "Get in touch with Cliffs International College. Visit us at 20440 Victory Park, Ruwa, Zimbabwe. Phone: 0783 841 141. Email: cliftonmataruse2@gmail.com",
   keywords: ["contact school", "school address Zimbabwe", "Ruwa school location", "school phone number"],
   openGraph: {
     title: "Contact | Cliffs International College",
-    description: "Visit Cliffs International College in Solomio, Ruwa. Contact us for admissions and inquiries.",
+    description: "Visit Cliffs International College in Victory Park, Ruwa. Contact us for admissions and inquiries.",
     images: [
       {
         url: "/school_pictures/school_layout_1.jpg",
@@ -30,7 +30,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn direction="up" className="max-w-3xl space-y-3">
             <span className="text-xs font-semibold uppercase tracking-[0.22em] text-red-400">
-              Get in Touch · Solomio, Ruwa
+              Get in Touch · Victory Park, Ruwa
             </span>
             <h1 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-white">
               Contact &amp; Campus Location
@@ -132,10 +132,10 @@ export default function ContactPage() {
                 <h3 className="font-serif text-xl font-bold text-slate-900">Physical Campus Location</h3>
               </div>
               <p className="text-sm font-semibold text-slate-900">
-                20440 Victory Park, Solomio, Ruwa, Zimbabwe
+                20440 Victory Park, Ruwa, Zimbabwe
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Set in the tranquil community of Solomio in Ruwa, our campus offers a calm, focused atmosphere free from metropolitan traffic and urban noise — while remaining fully connected and accessible for commuters across the area.
+                Set in the tranquil community of Victory Park in Ruwa, our campus offers a calm, focused atmosphere free from metropolitan traffic and urban noise — while remaining fully connected and accessible for commuters across the area.
               </p>
               <div className="border-t border-slate-100 pt-3 text-xs text-slate-600 space-y-1">
                 <p>• <strong>Transport:</strong> Dedicated school kombi available along key routes.</p>
@@ -167,7 +167,7 @@ export default function ContactPage() {
             <div className="overflow-hidden rounded-3xl border-2 border-slate-200 shadow-md bg-slate-100">
               <iframe
                 title="Cliffs International College Location Map"
-                src="https://www.google.com/maps?q=20440+Victory+Park,+Solomio,+Ruwa,+Zimbabwe&output=embed"
+                src="https://www.google.com/maps?q=20440+Victory+Park,+Ruwa,+Zimbabwe&output=embed"
                 className="h-80 sm:h-96 w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

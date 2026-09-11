@@ -9,10 +9,10 @@ import { motion, AnimatePresence } from "framer-motion";
 const slides = [
   {
     src: "/school_pictures/school_layout_1.jpg",
-    tag: "Solomio Campus · Ruwa",
+    tag: "Victory Park Campus · Ruwa",
     title: "A Peaceful, Distraction-Free Learning Sanctuary",
     caption:
-      "Situated in the tranquil community of Solomio, our campus fosters rigorous academic focus, discipline, and personal development away from urban noise.",
+      "Situated in the tranquil community of Victory Park, our campus fosters rigorous academic focus, discipline, and personal development away from urban noise.",
   },
   {
     src: "/school_pictures/students_at debate.jpg",
