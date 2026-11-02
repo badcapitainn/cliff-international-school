@@ -6,9 +6,12 @@ import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionReveal
 
 export const metadata: Metadata = {
   title: "Contact",
+  alternates: { canonical: "/contact" },
+  twitter: { title: "Contact | Cliffs International College" },
   description: "Get in touch with Cliffs International College. Visit us at 20440 Victory Park, Ruwa, Zimbabwe. Phone: 0783 841 141. Email: cliftonmataruse2@gmail.com",
   keywords: ["contact school", "school address Zimbabwe", "Ruwa school location", "school phone number"],
   openGraph: {
+    url: "/contact",
     title: "Contact | Cliffs International College",
     description: "Visit Cliffs International College in Victory Park, Ruwa. Contact us for admissions and inquiries.",
     images: [

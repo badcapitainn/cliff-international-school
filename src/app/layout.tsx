@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -14,8 +15,8 @@ const body = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Cliffs International College | Elite Private School in Zimbabwe",
-    template: "%s | Cliffs International College"
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`
   },
   description: "Equipping youngsters to compete internationally – an elite Zimbabwean private school blending heritage, technology and holistic education. ZIMSEC-aligned O & A-Level programs from Form 1 to 6.",
   keywords: [
@@ -38,14 +39,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://cliffs-international-college.edu.zw"), // Replace with actual domain
-  alternates: {
-    canonical: "/",
-  },
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: "Cliffs International College | Elite Private School in Zimbabwe",
     description: "Equipping youngsters to compete internationally – an elite Zimbabwean private school blending heritage, technology and holistic education.",
-    url: "https://cliffs-international-college.edu.zw",
+    url: SITE_URL,
     siteName: "Cliffs International College",
     locale: "en_ZW",
     type: "website",
@@ -78,9 +76,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-site-verification-code", // Replace with actual verification code
-  },
 };
 
 export default function RootLayout({
@@ -99,8 +94,8 @@ export default function RootLayout({
               "@type": "EducationalOrganization",
               "name": "Cliffs International College",
               "description": "An elite Zimbabwean private school blending heritage, technology and holistic education.",
-              "url": "https://cliffs-international-college.edu.zw",
-              "logo": "https://cliffs-international-college.edu.zw/logo.png",
+              "url": SITE_URL,
+              "logo": `${SITE_URL}/school_pictures/Logo.jpg`,
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "20440 Victory Park",

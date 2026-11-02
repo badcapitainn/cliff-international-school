@@ -6,9 +6,12 @@ import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionReveal
 
 export const metadata: Metadata = {
   title: "Campus Life",
+  alternates: { canonical: "/campus-life" },
+  twitter: { title: "Campus Life | Cliffs International College" },
   description: "Experience holistic development at Cliffs International College. From science labs and ICT suites to debates, sports, and national competitions in a calm, semi-rural campus.",
   keywords: ["campus life", "school activities", "sports clubs", "student life Zimbabwe", "extracurricular activities"],
   openGraph: {
+    url: "/campus-life",
     title: "Campus Life | Cliffs International College",
     description: "In and beyond the classroom - holistic development with clubs, sports, and competitions.",
     images: [

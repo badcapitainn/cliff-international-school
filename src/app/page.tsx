@@ -21,11 +21,14 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: { absolute: "Home | Cliffs International College" },
+  alternates: { canonical: "/" },
+  twitter: { title: "Home | Cliffs International College" },
   description:
     "Welcome to Cliffs International College — Zimbabwe's premier private school in Victory Park, Ruwa. ZIMSEC-aligned O & A-Level education, 100% A-Level pass rate, and holistic leadership development.",
   openGraph: {
-    title: "Cliffs International College | Elite Private Secondary School in Zimbabwe",
+    url: "/",
+    title: "Home | Cliffs International College",
     description:
       "Equipping youngsters to compete internationally – an elite Zimbabwean private school blending academic rigour, digital innovation and character building.",
     images: [

@@ -5,9 +5,12 @@ import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionReveal
 
 export const metadata: Metadata = {
   title: "Admissions",
+  alternates: { canonical: "/admissions" },
+  twitter: { title: "Admissions | Cliffs International College" },
   description: "Join Cliffs International College family. Learn about entry requirements, intakes, and competitive private school fees with flexible payment plans for quality education.",
   keywords: ["school admissions Zimbabwe", "private school fees", "enrollment requirements", "school intake"],
   openGraph: {
+    url: "/admissions",
     title: "Admissions | Cliffs International College",
     description: "Accessible, future-proof education. Competitive fees and flexible payment plans.",
     images: [

@@ -5,9 +5,12 @@ import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionReveal
 
 export const metadata: Metadata = {
   title: "Academics",
+  alternates: { canonical: "/academics" },
+  twitter: { title: "Academics | Cliffs International College" },
   description: "Discover our ZIMSEC-aligned O & A-Level curriculum at Cliffs International College. From Form 1 to 6, we build academic excellence, digital literacy, and character for international competitiveness.",
   keywords: ["ZIMSEC curriculum", "O Level A Level Zimbabwe", "academic programs", "secondary education Zimbabwe"],
   openGraph: {
+    url: "/academics",
     title: "Academics | Cliffs International College",
     description: "ZIMSEC curriculum, globally minded outcomes. Rigorous academic foundation from Form 1 to 6.",
     images: [

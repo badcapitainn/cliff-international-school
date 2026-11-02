@@ -1,7 +1,8 @@
+import { SITE_URL } from "@/lib/site";
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://cliffs-international-college.edu.zw' // Replace with actual domain
+  const baseUrl = SITE_URL
 
   return [
     {
